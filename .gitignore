@@ -1,4 +1,5 @@
 /data
 /output
 *.pyc
-*.IdentifierE
+*.Identifier
+*temp*
