@@ -3,3 +3,4 @@
 *.pyc
 *.Identifier
 *temp*
+.Rproj.user
