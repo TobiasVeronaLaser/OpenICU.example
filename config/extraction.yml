@@ -3,6 +3,8 @@ version: 1.0.0
 
 config_files:
   - path: /workspaces/config/mimic-iv/3.1/dataset/
+    excludes:
+      - openicu.config.dataset.mimic-iv.3.1.emar_detail
     # includes:
     #   - openicu.config.dataset.mimic-iv.3.1.prescriptions
     #   - openicu.config.dataset.mimic-iv.3.1.outputevents
