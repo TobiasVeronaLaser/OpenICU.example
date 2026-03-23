@@ -11,7 +11,8 @@
             "src_regex": null,
             "short": "lact",
             "min": 0,
-            "max": 50
+            "max": 50,
+            "sub_var": "itemid"
         }
     ],
     "prothrombine_time": [
@@ -26,7 +27,8 @@
             "src_regex": null,
             "short": "pt",
             "min": 0,
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "antibiotics": [
@@ -39,7 +41,8 @@
             "src_regex": "aztreonam|bactrim|cephalexin|chloramphenicol|cipro|flagyl|metronidazole|nitrofurantoin|tazobactam|rifampin|sulfadiazine|timentin|trimethoprim|(amika|gentami|vanco)cin|(amoxi|ampi|dicloxa|naf|oxa|peni|pipera)cillin|(azithro|clarithro|erythro|clinda|strepto|tobra|vanco)mycin|cef(azolin|tazidime|adroxil|epime|otetan|otaxime|podoxime|uroxime)|(doxy|mino|tetra)cycline|(levofl|moxifl|ofl)oxacin|macro(bid|dantin)|(una|zo)syn",
             "short": "abx",
             "min": "-Inf",
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "drug"
         },
         {
             "name": "antibiotics",
@@ -102,7 +105,8 @@
             "src_regex": null,
             "short": "abx",
             "min": "-Inf",
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "neutrophils": [
@@ -117,7 +121,8 @@
             "src_regex": null,
             "short": "neut",
             "min": 0,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         }
     ],
     "eosinophils": [
@@ -132,7 +137,8 @@
             "src_regex": null,
             "short": "eos",
             "min": 0,
-            "max": 50
+            "max": 50,
+            "sub_var": "itemid"
         }
     ],
     "bicarbonate": [
@@ -150,7 +156,8 @@
             "src_regex": null,
             "short": "bicar",
             "min": 5,
-            "max": 50
+            "max": 50,
+            "sub_var": "itemid"
         }
     ],
     "fraction_of_inspired_oxygen": [
@@ -165,7 +172,8 @@
             "src_regex": null,
             "short": "fio2",
             "min": 21,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         },
         {
             "name": "fraction_of_inspired_oxygen",
@@ -178,7 +186,8 @@
             "src_regex": null,
             "short": "fio2",
             "min": 21,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         }
     ],
     "alkaline_phosphatase": [
@@ -196,7 +205,8 @@
             "src_regex": null,
             "short": "alp",
             "min": 0,
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "erythrocyte_distribution_width": [
@@ -211,7 +221,8 @@
             "src_regex": null,
             "short": "rdw",
             "min": 0,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         }
     ],
     "systolic_blood_pressure": [
@@ -230,7 +241,8 @@
             "src_regex": null,
             "short": "sbp",
             "min": 0,
-            "max": 300
+            "max": 300,
+            "sub_var": "itemid"
         }
     ],
     "endtidal_CO2": [
@@ -248,7 +260,8 @@
             "src_regex": null,
             "short": "etco2",
             "min": 10,
-            "max": 60
+            "max": 60,
+            "sub_var": "itemid"
         }
     ],
     "hematocrit": [
@@ -263,7 +276,8 @@
             "src_regex": null,
             "short": "hct",
             "min": 15,
-            "max": 60
+            "max": 60,
+            "sub_var": "itemid"
         }
     ],
     "band_form_neutrophils": [
@@ -278,7 +292,8 @@
             "src_regex": null,
             "short": "bnd",
             "min": "-Inf",
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "base_excess": [
@@ -296,7 +311,8 @@
             "src_regex": null,
             "short": "be",
             "min": -25,
-            "max": 25
+            "max": 25,
+            "sub_var": "itemid"
         }
     ],
     "pH_of_blood": [
@@ -311,7 +327,8 @@
             "src_regex": null,
             "short": "ph",
             "min": 6.8,
-            "max": 8
+            "max": 8,
+            "sub_var": "itemid"
         }
     ],
     "calcium_ionized": [
@@ -326,7 +343,8 @@
             "src_regex": null,
             "short": "cai",
             "min": 0.5,
-            "max": 2
+            "max": 2,
+            "sub_var": "itemid"
         }
     ],
     "chloride": [
@@ -344,7 +362,8 @@
             "src_regex": null,
             "short": "cl",
             "min": 80,
-            "max": 130
+            "max": 130,
+            "sub_var": "itemid"
         }
     ],
     "total_bilirubin": [
@@ -359,7 +378,8 @@
             "src_regex": null,
             "short": "bili",
             "min": 0,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         }
     ],
     "respiratory_rate": [
@@ -380,7 +400,8 @@
             "src_regex": null,
             "short": "resp",
             "min": 0,
-            "max": 120
+            "max": 120,
+            "sub_var": "itemid"
         }
     ],
     "GCS_eye": [
@@ -395,7 +416,8 @@
             "src_regex": null,
             "short": "egcs",
             "min": 1,
-            "max": 4
+            "max": 4,
+            "sub_var": "itemid"
         }
     ],
     "hemoglobin": [
@@ -410,7 +432,8 @@
             "src_regex": null,
             "short": "hgb",
             "min": 4,
-            "max": 18
+            "max": 18,
+            "sub_var": "itemid"
         }
     ],
     "totcal_CO2": [
@@ -425,7 +448,8 @@
             "src_regex": null,
             "short": "tco2",
             "min": 5,
-            "max": 60
+            "max": 60,
+            "sub_var": "itemid"
         }
     ],
     "arterial_oxygen_saturation": [
@@ -443,7 +467,8 @@
             "src_regex": null,
             "short": "sao2",
             "min": 50,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         },
         {
             "name": "arterial_oxygen_saturation",
@@ -459,7 +484,8 @@
             "src_regex": null,
             "short": "sao2",
             "min": 50,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         }
     ],
     "erythrocyte_sedimentation_rate": [
@@ -477,7 +503,8 @@
             "src_regex": null,
             "short": "esr",
             "min": 0,
-            "max": 200
+            "max": 200,
+            "sub_var": "itemid"
         }
     ],
     "white_blood_cell_count": [
@@ -495,7 +522,8 @@
             "src_regex": null,
             "short": "wbc",
             "min": 0,
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "partial_thromboplastin_time": [
@@ -510,7 +538,8 @@
             "src_regex": null,
             "short": "ptt",
             "min": 0,
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "potassium": [
@@ -528,10 +557,11 @@
             "src_regex": null,
             "short": "k",
             "min": 0,
-            "max": 10
+            "max": 10,
+            "sub_var": "itemid"
         }
     ],
-    "al_pressure": [
+    "O2_partial_pressure": [
         {
             "name": "O2_partial_pressure",
             "unit": [
@@ -546,7 +576,8 @@
             "src_regex": null,
             "short": "po2",
             "min": 40,
-            "max": 600
+            "max": 600,
+            "sub_var": "itemid"
         }
     ],
     "CO2_partial_pressure": [
@@ -564,7 +595,8 @@
             "src_regex": null,
             "short": "pco2",
             "min": 10,
-            "max": 150
+            "max": 150,
+            "sub_var": "itemid"
         }
     ],
     "patient_height": [
@@ -579,7 +611,8 @@
             "src_regex": null,
             "short": "height",
             "min": 10,
-            "max": 230
+            "max": 230,
+            "sub_var": "itemid"
         }
     ],
     "Richmond_agitation_sedation_scale": [
@@ -594,7 +627,8 @@
             "src_regex": null,
             "short": "rass",
             "min": -5,
-            "max": 4
+            "max": 4,
+            "sub_var": "itemid"
         }
     ],
     "C-reactive_protein": [
@@ -609,7 +643,8 @@
             "src_regex": null,
             "short": "crp",
             "min": 0,
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "temperature": [
@@ -627,7 +662,8 @@
             "src_regex": null,
             "short": "temp",
             "min": 32,
-            "max": 42
+            "max": 42,
+            "sub_var": "itemid"
         },
         {
             "name": "temperature",
@@ -644,7 +680,8 @@
             "src_regex": null,
             "short": "temp",
             "min": 32,
-            "max": 42
+            "max": 42,
+            "sub_var": "itemid"
         }
     ],
     "heart_rate": [
@@ -662,7 +699,8 @@
             "src_regex": null,
             "short": "hr",
             "min": 0,
-            "max": 300
+            "max": 300,
+            "sub_var": "itemid"
         }
     ],
     "glucose": [
@@ -678,7 +716,8 @@
             "src_regex": null,
             "short": "glu",
             "min": 0,
-            "max": 1000
+            "max": 1000,
+            "sub_var": "itemid"
         }
     ],
     "GCS_verbal": [
@@ -693,7 +732,8 @@
             "src_regex": null,
             "short": "vgcs",
             "min": 1,
-            "max": 5
+            "max": 5,
+            "sub_var": "itemid"
         }
     ],
     "bilirubin_direct": [
@@ -708,7 +748,8 @@
             "src_regex": null,
             "short": "bili_dir",
             "min": 0,
-            "max": 50
+            "max": 50,
+            "sub_var": "itemid"
         }
     ],
     "phosphate": [
@@ -723,7 +764,8 @@
             "src_regex": null,
             "short": "phos",
             "min": 0,
-            "max": 40
+            "max": 40,
+            "sub_var": "itemid"
         }
     ],
     "troponin_t": [
@@ -738,7 +780,8 @@
             "src_regex": null,
             "short": "tnt",
             "min": 0,
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "Hemoglobin_A1C": [
@@ -753,7 +796,8 @@
             "src_regex": null,
             "short": "hba1c",
             "min": "-Inf",
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "fibrinogen": [
@@ -768,7 +812,8 @@
             "src_regex": null,
             "short": "fgn",
             "min": 0,
-            "max": 1500
+            "max": 1500,
+            "sub_var": "itemid"
         }
     ],
     "magnesium": [
@@ -783,7 +828,8 @@
             "src_regex": null,
             "short": "mg",
             "min": 0.5,
-            "max": 5
+            "max": 5,
+            "sub_var": "itemid"
         }
     ],
     "creatine_kinase_MB": [
@@ -798,7 +844,8 @@
             "src_regex": null,
             "short": "ckmb",
             "min": 0,
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "calcium": [
@@ -813,7 +860,8 @@
             "src_regex": null,
             "short": "ca",
             "min": 4,
-            "max": 20
+            "max": 20,
+            "sub_var": "itemid"
         }
     ],
     "basophils": [
@@ -828,7 +876,8 @@
             "src_regex": null,
             "short": "basos",
             "min": 0,
-            "max": 50
+            "max": 50,
+            "sub_var": "itemid"
         }
     ],
     "oxygen_saturation": [
@@ -848,7 +897,8 @@
             "src_regex": null,
             "short": "o2sat",
             "min": 50,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         },
         {
             "name": "oxygen_saturation",
@@ -864,7 +914,8 @@
             "src_regex": null,
             "short": "o2sat",
             "min": 50,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         },
         {
             "name": "oxygen_saturation",
@@ -881,7 +932,8 @@
             "src_regex": null,
             "short": "spo2",
             "min": 50,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         }
     ],
     "mean_corpuscular_volume": [
@@ -896,7 +948,8 @@
             "src_regex": null,
             "short": "mcv",
             "min": 50,
-            "max": 150
+            "max": 150,
+            "sub_var": "itemid"
         }
     ],
     "albumin": [
@@ -911,7 +964,8 @@
             "src_regex": null,
             "short": "alb",
             "min": 0,
-            "max": 6
+            "max": 6,
+            "sub_var": "itemid"
         }
     ],
     "mean_arterial_pressure": [
@@ -931,7 +985,8 @@
             "src_regex": null,
             "short": "map",
             "min": 0,
-            "max": 250
+            "max": 250,
+            "sub_var": "itemid"
         }
     ],
     "sodium": [
@@ -949,7 +1004,8 @@
             "src_regex": null,
             "short": "na",
             "min": 110,
-            "max": 165
+            "max": 165,
+            "sub_var": "itemid"
         }
     ],
     "creatinine": [
@@ -964,7 +1020,8 @@
             "src_regex": null,
             "short": "crea",
             "min": 0,
-            "max": 15
+            "max": 15,
+            "sub_var": "itemid"
         }
     ],
     "methemoglobin": [
@@ -979,7 +1036,8 @@
             "src_regex": null,
             "short": "methb",
             "min": 0,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         }
     ],
     "mean_corpuscular_hemoglobin_concentration": [
@@ -994,7 +1052,8 @@
             "src_regex": null,
             "short": "mchc",
             "min": 20,
-            "max": 50
+            "max": 50,
+            "sub_var": "itemid"
         }
     ],
     "lymphocytes": [
@@ -1009,7 +1068,8 @@
             "src_regex": null,
             "short": "lymph",
             "min": 0,
-            "max": 100
+            "max": 100,
+            "sub_var": "itemid"
         }
     ],
     "GCS_motor": [
@@ -1024,7 +1084,8 @@
             "src_regex": null,
             "short": "mgcs",
             "min": 1,
-            "max": 6
+            "max": 6,
+            "sub_var": "itemid"
         }
     ],
     "platelet_count": [
@@ -1042,7 +1103,8 @@
             "src_regex": null,
             "short": "plt",
             "min": 5,
-            "max": 1200
+            "max": 1200,
+            "sub_var": "itemid"
         }
     ],
     "blood_urea_nitrogen": [
@@ -1057,7 +1119,8 @@
             "src_regex": null,
             "short": "bun",
             "min": 0,
-            "max": 200
+            "max": 200,
+            "sub_var": "itemid"
         }
     ],
     "red_blood_cell_count": [
@@ -1072,7 +1135,8 @@
             "src_regex": null,
             "short": "rbc",
             "min": 0,
-            "max": 20
+            "max": 20,
+            "sub_var": "itemid"
         }
     ],
     "mean_corpuscular_hemoglobin": [
@@ -1087,7 +1151,8 @@
             "src_regex": null,
             "short": "mch",
             "min": 0,
-            "max": "Inf"
+            "max": "Inf",
+            "sub_var": "itemid"
         }
     ],
     "diastolic_blood_pressure": [
@@ -1106,7 +1171,8 @@
             "src_regex": null,
             "short": "dbp",
             "min": 0,
-            "max": 200
+            "max": 200,
+            "sub_var": "itemid"
         }
     ]
 }
