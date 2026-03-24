@@ -4,7 +4,8 @@ library(jsonlite)
 output <- list()
 
 # JSON laden
-found_data_info <- lapply(fromJSON("C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU-Example\\scripts\\check-open_icu-to-ricu.json", simplifyVector=FALSE), function(x) toJSON(x, auto_unbox=TRUE))
+
+found_data_info <- lapply(fromJSON("C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU-Example\\custom\\shared\\check-open_icu-to-ricu.json", simplifyVector=FALSE), function(x) toJSON(x, auto_unbox=TRUE))
 
 local_patient <- as.data.frame(miiv$patients[, c("subject_id", "anchor_year", "anchor_age")])
 local_patient$birthdate <- as.POSIXct(
@@ -159,5 +160,8 @@ for (values in found_data_info) {
   # gc()
   
 }
+timestamp <- format(Sys.time(), "%Y-%m-%d_%H-%M-%S")
 
-write_json(output, "C:\\Users\\q039tl\\Documents\\output.json", pretty = TRUE, auto_unbox = TRUE)
+filename = paste0("C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU-Example\\custom\\shared\\output_", timestamp, ".json")
+
+write_json(output, filename, pretty = TRUE, auto_unbox = TRUE)
