@@ -1,0 +1,302 @@
+{
+  "lactate": {
+    "name": "lactate",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 670016
+  },
+  "prothrombine_time": {
+    "name": "prothrombine_time",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1782642
+  },
+  "antibiotics": {
+    "name": ["antibiotics", "antibiotics"],
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 1456090
+  },
+  "neutrophils": {
+    "name": "neutrophils",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1611767
+  },
+  "eosinophils": {
+    "name": "eosinophils",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1611761
+  },
+  "bicarbonate": {
+    "name": "bicarbonate",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 3934240
+  },
+  "fraction_of_inspired_oxygen": {
+    "name": ["fraction_of_inspired_oxygen", "fraction_of_inspired_oxygen"],
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1228343
+  },
+  "alkaline_phosphatase": {
+    "name": "alkaline_phosphatase",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1602599
+  },
+  "erythrocyte_distribution_width": {
+    "name": "erythrocyte_distribution_width",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4151884
+  },
+  "systolic_blood_pressure": {
+    "name": "systolic_blood_pressure",
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 0
+  },
+  "endtidal_CO2": {
+    "name": "endtidal_CO2",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 159348
+  },
+  "hematocrit": {
+    "name": "hematocrit",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4331615
+  },
+  "band_form_neutrophils": {
+    "name": "band_form_neutrophils",
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 249689
+  },
+  "base_excess": {
+    "name": "base_excess",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 698337
+  },
+  "pH_of_blood": {
+    "name": "pH_of_blood",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 754141
+  },
+  "calcium_ionized": {
+    "name": "calcium_ionized",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 370407
+  },
+  "chloride": {
+    "name": "chloride",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4055101
+  },
+  "total_bilirubin": {
+    "name": "total_bilirubin",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1605452
+  },
+  "respiratory_rate": {
+    "name": "respiratory_rate",
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 0
+  },
+  "GCS_eye": {
+    "name": "GCS_eye",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 2209510
+  },
+  "hemoglobin": {
+    "name": "hemoglobin",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4181121
+  },
+  "totcal_CO2": {
+    "name": "totcal_CO2",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 698337
+  },
+  "arterial_oxygen_saturation": {
+    "name": ["arterial_oxygen_saturation", "arterial_oxygen_saturation"],
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 358660
+  },
+  "erythrocyte_sedimentation_rate": {
+    "name": "erythrocyte_sedimentation_rate",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 64097
+  },
+  "white_blood_cell_count": {
+    "name": "white_blood_cell_count",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4157284
+  },
+  "partial_thromboplastin_time": {
+    "name": "partial_thromboplastin_time",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1637800
+  },
+  "potassium": {
+    "name": "potassium",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4149507
+  },
+  "O2_partial_pressure": {
+    "name": "O2_partial_pressure",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 698483
+  },
+  "CO2_partial_pressure": {
+    "name": "CO2_partial_pressure",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 698217
+  },
+  "patient_height": {
+    "name": "patient_height",
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 43616
+  },
+  "Richmond_agitation_sedation_scale": {
+    "name": "Richmond_agitation_sedation_scale",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1656001
+  },
+  "C-reactive_protein": {
+    "name": "C-reactive_protein",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 178039
+  },
+  "temperature": {
+    "name": ["temperature", "temperature"],
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 3706632
+  },
+  "heart_rate": {
+    "name": "heart_rate",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 8752069
+  },
+  "glucose": {
+    "name": "glucose",
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 0
+  },
+  "GCS_verbal": {
+    "name": "GCS_verbal",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 2205121
+  },
+  "bilirubin_direct": {
+    "name": "bilirubin_direct",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 120044
+  },
+  "phosphate": {
+    "name": "phosphate",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 2814319
+  },
+  "troponin_t": {
+    "name": "troponin_t",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 459872
+  },
+  "Hemoglobin_A1C": {
+    "name": "Hemoglobin_A1C",
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 295978
+  },
+  "fibrinogen": {
+    "name": "fibrinogen",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 154065
+  },
+  "magnesium": {
+    "name": "magnesium",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 2933221
+  },
+  "creatine_kinase_MB": {
+    "name": "creatine_kinase_MB",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 266856
+  },
+  "calcium": {
+    "name": "calcium",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 2969588
+  },
+  "basophils": {
+    "name": "basophils",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1611761
+  },
+  "oxygen_saturation": {
+    "name": ["oxygen_saturation", "oxygen_saturation", "oxygen_saturation"],
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 19114064
+  },
+  "mean_corpuscular_volume": {
+    "name": "mean_corpuscular_volume",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4152105
+  },
+  "albumin": {
+    "name": "albumin",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1032456
+  },
+  "mean_arterial_pressure": {
+    "name": "mean_arterial_pressure",
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 0
+  },
+  "sodium": {
+    "name": "sodium",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4111289
+  },
+  "creatinine": {
+    "name": "creatinine",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4319091
+  },
+  "methemoglobin": {
+    "name": "methemoglobin",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 5708
+  },
+  "mean_corpuscular_hemoglobin_concentration": {
+    "name": "mean_corpuscular_hemoglobin_concentration",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4152226
+  },
+  "lymphocytes": {
+    "name": "lymphocytes",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1611766
+  },
+  "GCS_motor": {
+    "name": "GCS_motor",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 2199619
+  },
+  "platelet_count": {
+    "name": "platelet_count",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4214048
+  },
+  "blood_urea_nitrogen": {
+    "name": "blood_urea_nitrogen",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4202807
+  },
+  "red_blood_cell_count": {
+    "name": "red_blood_cell_count",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4152106
+  },
+  "mean_corpuscular_hemoglobin": {
+    "name": "mean_corpuscular_hemoglobin",
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 4152104
+  },
+  "diastolic_blood_pressure": {
+    "name": "diastolic_blood_pressure",
+    "is_equal_in_ricu": false,
+    "in_ricu_df_size": 0
+  }
+}
