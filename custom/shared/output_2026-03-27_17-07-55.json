@@ -1,0 +1,7 @@
+{
+  "antibiotics": {
+    "name": ["antibiotics", "antibiotics"],
+    "is_equal_in_ricu": true,
+    "in_ricu_df_size": 1456090
+  }
+}

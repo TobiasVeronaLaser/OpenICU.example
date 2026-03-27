@@ -1,4 +1,4 @@
-library(ricu)
+library(ricu.openicu.specific)
 library(jsonlite)
 
 output <- list()
@@ -13,8 +13,10 @@ local_patient$birthdate <- as.POSIXct(
   format = "%Y-%m-%d %H:%M:%S", tz = "UTC"
 )
 
-active_wanted_list = FALSE
+active_wanted_list = TRUE
 wanted_list = c("abx")
+
+self_created_concepts = list()
 
 for (values in found_data_info) {
   parsed <- fromJSON(values)
@@ -91,11 +93,14 @@ for (values in found_data_info) {
     if (active_wanted_list & !parsed$short[1] %in% wanted_list ) next
     print(parsed$short[1])
     
+    # load ricu concept
     cnpt <- load_concepts(parsed$short[1], src="miiv", aggregate=FALSE, interval=secs(1), id_type="patient")
     cnpt_count = nrow(cnpt)
     
+    # iterate entries of info 
     for (i in seq_along(parsed$short)){
       
+      # boundaries
       min_val <- if (length(parsed$min[i]) > 0) as.numeric(parsed$min[i]) else NULL
       max_val <- if (length(parsed$max[i]) > 0) as.numeric(parsed$max[i]) else NULL
       
@@ -137,6 +142,8 @@ for (values in found_data_info) {
       }
       
       self_created_concept_count = self_created_concept_count + nrow(self_created_concept)
+      
+      self_created_concepts = c(self_created_concepts, list(self_created_concept))
     }
 
     if (cnpt_count == self_created_concept_count) {
@@ -145,8 +152,9 @@ for (values in found_data_info) {
       print(paste(parsed$short, ": NOT", cnpt_count, "vs", self_created_concept_count))
     }
     
-    rm(cnpt, tbl, cnpt_from_event, self_created_concept, itemid_mask)
-    gc()
+    
+    #rm(cnpt, tbl, cnpt_from_event, self_created_concept, itemid_mask)
+    #gc()
     
     output[[parsed$name[1]]] = list(
       name = parsed$name,
