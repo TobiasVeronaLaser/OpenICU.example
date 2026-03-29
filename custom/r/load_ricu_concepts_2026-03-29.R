@@ -13,8 +13,8 @@ local_patient$birthdate <- as.POSIXct(
   format = "%Y-%m-%d %H:%M:%S", tz = "UTC"
 )
 
-active_wanted_list = FALSE
-wanted_list = c("abx")
+active_wanted_list = TRUE
+wanted_list = c("map")
 
 self_created_concepts = list()
 
@@ -31,21 +31,21 @@ for (values in found_data_info) {
     
     cnpt <- load_concepts(parsed$short, src="miiv", aggregate=FALSE, interval=secs(1), id_type="patient")
     cnpt_count = nrow(cnpt)
-    
+    gc()
     min_val <- if (length(parsed$min) > 0) as.numeric(parsed$min) else NULL
     max_val <- if (length(parsed$max) > 0) as.numeric(parsed$max) else NULL
     
-    cnpt$birthdate <- local_patient$birthdate[match(cnpt$subject_id, local_patient$subject_id)]
+    # cnpt$birthdate <- local_patient$birthdate[match(cnpt$subject_id, local_patient$subject_id)]
     # cnpt$charttime_origin <- cnpt$birthdate + cnpt$charttime - 3600
     
     tbl = miiv[[parsed$table]]
-    
+    gc()
     if( -Inf != min_val | Inf != max_val){
       tbl <- tbl[, c(parsed$sub_var, "subject_id", "valuenum")]
     }else{
       tbl <- tbl[, c(parsed$sub_var, "subject_id")]
     }
-    
+    gc()
     if(!is.null(parsed$ids) && length(parsed$ids) > 0){
       itemid_mask <- tbl[[parsed$sub_var]] %in% parsed$ids
     }else if(!is.null(parsed$src_regex) && length(parsed$src_regex) > 0){
@@ -54,13 +54,16 @@ for (values in found_data_info) {
       cat("!NULL vor", parsed$short)
       break
     }
-    
+    gc()
     # itemid_mask <- tbl[["itemid"]] %in% parsed$ids
     
     cnpt_from_event <- tbl[itemid_mask, ]
+    gc()
     cnpt_from_event_count = nrow(cnpt_from_event)
     
     # rm(tbl)
+    
+    # TODO: better to reduce usage of variable, do more nested ifs and only one search expression
     
     if( -Inf != min_val | Inf != max_val){
       # self_created_concept <- cnpt_from_event[!is.na(valuenum) & valuenum >= min_val & valuenum <= max_val]
@@ -76,7 +79,7 @@ for (values in found_data_info) {
     
     rm(cnpt, cnpt_from_event, self_created_concept, itemid_mask)
     gc()
-
+    
     if (cnpt_count == self_created_concept_count) {
       print(paste(parsed$short, ": works"))
     } else {
@@ -104,11 +107,11 @@ for (values in found_data_info) {
       min_val <- if (length(parsed$min[i]) > 0) as.numeric(parsed$min[i]) else NULL
       max_val <- if (length(parsed$max[i]) > 0) as.numeric(parsed$max[i]) else NULL
       
-      cnpt$birthdate <- local_patient$birthdate[match(cnpt$subject_id, local_patient$subject_id)]
+      # cnpt$birthdate <- local_patient$birthdate[match(cnpt$subject_id, local_patient$subject_id)]
       # cnpt$charttime_origin <- cnpt$birthdate + cnpt$charttime - 3600
       
       tbl = miiv[[parsed$table[i]]]
-        
+      
       if( -Inf != min_val | Inf != max_val){
         tbl <- tbl[, c(parsed$sub_var[i], "subject_id", "valuenum")]
       }else{
@@ -145,7 +148,7 @@ for (values in found_data_info) {
       
       self_created_concepts = c(self_created_concepts, list(self_created_concept))
     }
-
+    
     if (cnpt_count == self_created_concept_count) {
       print(paste(parsed$short, ": works"))
     } else {
