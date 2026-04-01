@@ -7,7 +7,7 @@ output <- list()
 # JSON load
 found_data_info <- lapply(
   fromJSON(
-    "C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU-Example\\custom\\shared\\check-open_icu-to-ricu-2026-03-27_12-57-28.json",
+    "C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU.example\\custom\\shared\\check-open_icu-to-ricu-2026-03-27_12-57-28.json",
     simplifyVector = FALSE
   ),
   function(x) toJSON(x, auto_unbox = TRUE)
@@ -291,7 +291,7 @@ for (values in found_data_info) {
 timestamp <- format(Sys.time(), "%Y-%m-%d_%H-%M-%S")
 
 filename <- paste0(
-  "C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU-Example\\custom\\shared\\output_",
+  "C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU.example\\custom\\shared\\output_",
   timestamp,
   ".json"
 )

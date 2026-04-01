@@ -1,4 +1,4 @@
-# OpenICU-Example
+# OpenICU.example
 
 
 ## Check if OpenICU produces the same number of concept entries as ricu concepts have.

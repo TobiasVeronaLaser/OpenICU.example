@@ -7,7 +7,7 @@ output <- list()
 
 dataset_name = "mimic_demo"
 
-found_data_info <- lapply(fromJSON(paste0("C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU-Example\\custom\\shared\\",  dataset_name, "\\check-open_icu-to-ricu-2026-03-30_13-13-17.json"), simplifyVector=FALSE), function(x) toJSON(x, auto_unbox=TRUE))
+found_data_info <- lapply(fromJSON(paste0("C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU.example\\custom\\shared\\",  dataset_name, "\\check-open_icu-to-ricu-2026-03-30_13-13-17.json"), simplifyVector=FALSE), function(x) toJSON(x, auto_unbox=TRUE))
 
 # Option 1: getExportedValue
 dataset = getExportedValue("ricu.openicu.specific", dataset_name)
@@ -180,6 +180,6 @@ for (values in found_data_info) {
 }
 timestamp <- format(Sys.time(), "%Y-%m-%d_%H-%M-%S")
 
-filename = paste0("C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU-Example\\custom\\shared\\", dataset_name , "\\output_", timestamp, ".json")
+filename = paste0("C:\\Users\\q039tl\\Documents\\OpenICU\\OpenICU.example\\custom\\shared\\", dataset_name , "\\output_", timestamp, ".json")
 
 write_json(output, filename, pretty = TRUE, auto_unbox = TRUE)
