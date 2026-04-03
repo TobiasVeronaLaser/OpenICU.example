@@ -1,2 +1,0 @@
-remove.packages("ricu.openicu.specific")
-devtools::install("C:\\Users\\q039tl\\Documents\\ricu.openicu.specific", upgrade = FALSE)

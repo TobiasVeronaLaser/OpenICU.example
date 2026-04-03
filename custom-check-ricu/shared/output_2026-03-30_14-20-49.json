@@ -1,7 +1,0 @@
-{
-  "mean_arterial_pressure": {
-    "name": "mean_arterial_pressure",
-    "is_equal_in_ricu": false,
-    "in_ricu_df_size": 0
-  }
-}
