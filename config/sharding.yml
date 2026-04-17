@@ -8,13 +8,13 @@ config_files:
 config:
   concept_step: Concept
 
-  metadata_dataset: # extract code order
+  codes_metadata: # extract code order
     - path: /workspaces/OpenICU.example/output/project/datasets/extraction/metadata/codes.parquet
 
   datasets:
     include: 
-      - mimic-demo
-      # - mimic-iv
+      # - mimic-demo
+      - mimic-iv
 
   concepts:
     include_all: true
