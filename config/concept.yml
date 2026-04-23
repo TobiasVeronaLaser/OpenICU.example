@@ -2,16 +2,16 @@ name: Concept
 version: 1.0.0
 
 config_files:
-  - path: config/02_concept
+  - path: /workspaces/config/02_concept
 
 config:
   extraction_step: Extraction
   dataset_configs:
-    # - name: mimic-iv
-    #   path: config/mimic-iv/3.1/concept/
+    - name: mimic-iv
+      path: /workspaces/config/mimic-iv/3.1/concept/
     # - name: eicu-crd
-    #   path: config/eicu-crd/2.0/concept/
+    #   path: /workspaces/config/eicu-crd/2.0/concept/
     # - name: nwicu
-    #   path: config/nwicu/0.1.0/concept/
-    - name: mimic-demo
-      path: config/mimic-demo/2.2/concept/
+    #   path: /workspaces/config/nwicu/0.1.0/concept/
+    # - name: mimic-demo
+    #   path: /workspaces/config/mimic-demo/2.2/concept/

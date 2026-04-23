@@ -21,7 +21,3 @@ config:
 
   subjects:
     include_all: true
-
-  time_resolution: null
-  presplit: false
-  subjects_per_shard: 1000

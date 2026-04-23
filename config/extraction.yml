@@ -2,18 +2,18 @@ name: Extraction
 version: 1.0.0
 
 config_files:
-  # - path: config/mimic-iv/3.1/dataset/
-  # - path: config/nwicu/0.1.0/dataset/
-  # - path: config/eicu-crd/2.0/dataset/
-  - path: config/mimic-demo/2.2/dataset/
+  # - path: /workspaces/config/eicu-crd/2.0/dataset/
+  - path: /workspaces/config/mimic-iv/3.1/dataset/
+  # - path: /workspaces/config/mimic-demo/2.2/dataset/
+  # - path: /workspaces/config/nwicu/0.1.0/dataset/
 
 config:
   data:
-    # - name: mimic-iv
-    #   path: example/data/physionet.org/files/mimiciv/3.1
     # - name: eicu-crd
-    #   path: example/data/physionet.org/files/eicu-crd/2.0
+    #   path: /workspaces/example/data/physionet.org/files/eicu-crd/2.0
+    - name: mimic-iv
+      path: /workspaces/example/data/physionet.org/files/mimiciv/3.1
+    # - name: mimic-demo
+    #   path: /workspaces/example/data/physionet.org/files/mimic-demo/2.2
     # - name: nwicu
-    #   path: example/data/physionet.org/files/nwicu-northwestern-icu/0.1.0
-    - name: mimic-demo
-      path: example/data/physionet.org/files/mimic-demo/2.2
+    #   path: /workspaces/example/data/physionet.org/files/nwicu-northwestern-icu/0.1.0
