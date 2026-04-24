@@ -2,7 +2,7 @@ name: Sharding
 version: 1.0.0
 
 config_files:
-  - path: /workspaces/config/03_sharding
+  - path: /workspaces/config/sharding
 
 config:
   concept_step: Concept
